@@ -6,7 +6,6 @@ Um projeto de estudo implementando um Cronômetro e Temporizador gráfico usando
 - Cronômetro (Iniciar, Pausar, Resetar, persistência de dados).
 - Temporizador (Alarme sonoro, seleção de tempo).
 - Persistência de dados binária (o tempo não perde ao fechar).
-- Arquitetura de Loop desacoplada.
 
 ## Como Compilar (Windows)
 Este projeto utiliza Make. Certifique-se de ter o GCC/MinGW instalado e o Make configurado.
