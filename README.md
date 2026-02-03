@@ -17,7 +17,7 @@ Este projeto utiliza Make. Certifique-se de ter o GCC/MinGW instalado e o Make c
    make
 Caso não tenha o Make
 rode este comando:
-    ```bash
+   ```bash
     gcc src/main.c -o relogio.exe -I./include -L./lib-lraylib -lopengl32 -lgdi32 -lwinmm -luser32 -lshell32
-    
+
 	./relogio.exe
