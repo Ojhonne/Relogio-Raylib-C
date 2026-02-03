@@ -20,3 +20,5 @@ rode este comando:
     gcc src/main.c -o relogio.exe -I ./include -L ./lib -lraylib -lopengl32 -lgdi32 -lwinmm -luser32 -lshell32
 
 	./relogio.exe
+## Créditos
+Este projeto foi desenvolvido utilizando a biblioteca gráfica [Raylib](https://www.raylib.com/).
