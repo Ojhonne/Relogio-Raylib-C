@@ -347,8 +347,8 @@ void processaInputCronometro(Clock *cronometro, int* posicaoMouseCronometro, int
     case KEY_THREE: *opcaoMenuCronometro = 2; break;
     case KEY_SPACE: cronometro->pause = !cronometro->pause; *opcaoMenuCronometro = 1; break;
     case KEY_R: *opcaoMenuCronometro = 2; break;
-    case KEY_RIGHT: *opcaoMenuCronometro++; if (*opcaoMenuCronometro > (SLOTS_CAIXA_RELOGIO - 1)) *opcaoMenuCronometro = 0; break;  
-    case KEY_DOWN: *opcaoMenuCronometro--;  if (*opcaoMenuCronometro < 0) *opcaoMenuCronometro = (SLOTS_CAIXA_RELOGIO - 1); break;
+    case KEY_RIGHT: (*opcaoMenuCronometro)++; if ((*opcaoMenuCronometro) > (SLOTS_CAIXA_RELOGIO - 1)) (*opcaoMenuCronometro) = 0; break;  
+    case KEY_LEFT: (*opcaoMenuCronometro)--; if ((*opcaoMenuCronometro) < 0) (*opcaoMenuCronometro)= (SLOTS_CAIXA_RELOGIO); break;
     case KEY_ESCAPE: *exitWindowBack = true; break;
     default: if(WindowShouldClose()) exitWindow = true; break;
     }
@@ -360,7 +360,7 @@ void processaInputCronometro(Clock *cronometro, int* posicaoMouseCronometro, int
             case 0: cronometro->pause = false; break;
             case 1: cronometro->pause = !cronometro->pause; break;
             case 2: cronometro->timer = TEMPO_ZERADO; break;
-            default: break;
+            default: *opcaoMenuCronometro = DESATIVADO; break;
         }
        *opcaoMenuCronometro = DESATIVADO; 
     } 
