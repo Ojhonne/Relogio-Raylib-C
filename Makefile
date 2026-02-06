@@ -5,6 +5,6 @@ LIBS = -lraylib -lopengl32 -lgdi32 -lwinmm -luser32 -lshell32
 SRC = src/main.c
 
 init:
-	$(CC) $(SRC) -o main.exe $(CFLAGS) $(LDFLAGS) $(LIBS)
-	./main.exe
+	$(CC) $(SRC) -o Relogio.exe $(CFLAGS) $(LDFLAGS) $(LIBS)
+	./Relogio.exe
 	
